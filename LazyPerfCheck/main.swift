@@ -18,7 +18,7 @@ func main() {
 
 class RotatingBuffer {
     let BUF_SIZE = 100_000
-    var buf: [String] = Array(repeating: "I'll fix it later", count: 100_000)
+    lazy var buf: [String] = Array(repeating: "I'll fix it later", count: BUF_SIZE)
     var entryCount = 0
 
     func add(_ name: String) {
